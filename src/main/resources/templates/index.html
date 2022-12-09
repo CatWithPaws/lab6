@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Variable</title>
+        <style>
+            *{
+                padding: 0%;
+                margin: 0%;
+                font-size: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .field{
+                display: block;
+                width: 100vh;
+                height: 100vh;
+                margin: 0 auto;
+                background-color: #888;
+                font-size: 0;
+                padding: 0;
+                text-align: center;
+                vertical-align: top;
+            }
+            .cell{
+                vertical-align: top;
+                font-size: 33vh;
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                width: 33vh;
+                height: 33vh;
+                line-height: 30vh;
+                background-color: rgb(81, 173, 204);
+                box-shadow: inset 0px 0px 0px 2px #000;
+            }
+
+            .cell span{
+                
+                
+                
+                margin: 0;
+                padding: 0;
+            }
+            
+        </style>
+    </head>
+    <body>
+         <div class="field">
+            <div class="cell" th:utext="${cell00}"></div>
+            <div class="cell" th:utext="${cell01}"></div>
+            <div class="cell"th:utext="${cell02}"></div>
+            <div class="cell" th:utext="${cell10}"></div>
+            <div class="cell" th:utext="${cell11}"></div>
+            <div class="cell" th:utext="${cell12}"></div>
+            <div class="cell" th:utext="${cell20}"></div>
+            <div class="cell" th:utext="${cell21}"></div>
+            <div class="cell" th:utext="${cell22}"></div>
+         </div>
+    </body>
+</html>
